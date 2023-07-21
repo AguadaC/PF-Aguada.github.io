@@ -25,6 +25,26 @@ body {
     text-align: justify;
 }
 
+.presentation .row {
+    position: relative; /* Asegura que el contenido dentro de .row esté dentro del flujo del documento */
+  }
+
+.presentation_text::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Ajusta los colores del gradiente según tus preferencias */
+    background: linear-gradient(to right, #1c3f7a, #1c3e7a00); /* Cambia los colores aquí */
+    opacity: 0.3; /* Ajusta la opacidad del gradiente si lo deseas */
+    z-index: -1;
+  }
+
+.presentation img {
+    margin: auto;
+}
 .summary {
     margin-top: 50px;
     margin-bottom: 20px;

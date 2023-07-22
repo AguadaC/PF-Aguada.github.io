@@ -21,7 +21,7 @@ body {
     height: auto;
 }
 
-.presentation_text p, p.descriptionContainer {
+.presentation__text p, p.summary__description {
     text-align: justify;
 }
 
@@ -29,7 +29,7 @@ body {
     position: relative; /* Asegura que el contenido dentro de .row esté dentro del flujo del documento */
   }
 
-.presentation_text::after {
+.presentation__text::after {
     content: "";
     position: absolute;
     top: 0;
@@ -51,7 +51,7 @@ body {
 }
 
 @media (min-width: 0px){
-    .summary .summaryTitule, .presentation_text h1 {
+    .summary .summary__titule, .presentation__text h1 {
         margin-bottom: 10px;
         color: white;
         font-size: 20px;
@@ -63,25 +63,25 @@ body {
 }
 
 @media (min-width: 300px){
-    .summary .summaryTitule, .presentation_text h1{
+    .summary .summary__titule, .presentation__text h1{
         font-size: 25px;
     }
 }
 
 @media (min-width: 600px){
-    .summary .summaryTitule, .presentation_text h1{
+    .summary .summary__titule, .presentation__text h1{
         font-size: 40px;
     }
 }
 
 @media (min-width: 900px){
-    .summary .summaryTitule, .presentation_text h1{
+    .summary .summary__titule, .presentation__text h1{
         font-size: 60px;
     }
 }
 
 @media (min-width: 992px){
-    .presentation_text::after {
+    .presentation__text::after {
         background: linear-gradient(to right, #1c3f7a, #1c3e7a00); /* Cambia los colores aquí */
     }
 }
@@ -105,11 +105,11 @@ nav a.nav-link:hover:not(.active){
     color: #1c3f7a !important;
 }
 
-.detailBody {
+.summary__detail {
     display: flex;
 }
 
-.detailBody .detailItem {
+.summary__detail .summary__detail__item {
     width: 100%;
     height: auto;
     /* background-color: #aebfd7; */
@@ -119,34 +119,15 @@ nav a.nav-link:hover:not(.active){
     margin: 5px 5px;
 }
 
-.hiddenText {
-    position: absolute;
-    top: 0%;
-    padding: 10px;
-    font-size: 50px;
-    opacity: 0;
-    background-color: rgba(28, 63, 122, 0.7);
-    color: #fff;
-    transition: opacity 0.3s ease;
-}
-
-.detailBody .detailItem p {
+.summary__detail .summary__detail__item p {
     margin: 5px;
     font-size: 1rem;
     color: #1c3f7a;
 }
 
-.detailBody .detailItem img {
+.summary__detail .summary__detail__item img {
     width: 100%;
     height: auto;
-}
-
-.detailBody .detailItem:hover .menuItem {
-    opacity: 0.6;
-}
-
-.detailBody .detailItem:hover .hiddenText {
-    opacity: 1;
 }
 
 .footer {
@@ -166,56 +147,7 @@ nav a.nav-link:hover:not(.active){
     
 }
 
-.footer .footerTitule {
-    color: white;
-    margin: 5px;
-    font-size: 30px;
-    display: inline;
-    position: absolute;
-    text-align: center;
-}
-
-.footer .socialMedia {
-    display: inline;
-    position: absolute;
-    right: 0px;
-    padding-left: 20px;
-}
-
-.footer .socialMedia img {
-    padding-left: 20px;
-}
-
-.shortMenu #menu {
-    width: 100%;
-    display: flex;
-}
-
-.shortMenu .shortMenuItem {
-    width: 100%;
-    height: auto;
-    background-color: #418e95;
-    /* background-image: linear-gradient(to bottom, #38a0af, #418e95 50%, #aebfd7); */
-    position: relative;
-    display: inline-block;
-    padding: 5px;
-    margin: 5px 2px;
-    border: #1c3f7a;
-    text-align: center;
-    
-}
-
-.shortMenu .shortMenuItem h2 {
-    color: white;
-    text-shadow: #1c3f7a;
-    font-size: 20px;
-}
-
-.shortMenu .shortMenuItem#mainItem {
-    background-color: #1c3f7a;
-}
-
-.summary .videoContainer {
+.summary .summary__video {
     display: flex;
     width: 50%;
     height: auto;
@@ -231,17 +163,17 @@ nav a.nav-link:hover:not(.active){
 
 @keyframes fade-in-out {
     0% {
-        background-color: #1c3e7a9d; /* El texto está completamente oculto al inicio */
+        background-color: #1c3e7a9d;
     }
     50% {
-        background-color: #418e95; /* El texto es completamente visible a la mitad de la animación */
+        background-color: #418e95;
     }
     100% {
-        background-color: #1c3e7a9d; /* El texto vuelve a estar completamente oculto al final de la animación */
+        background-color: #1c3e7a9d;
     }
 }
 
-.summary .descriptionContainer {
+.summary .summary__description {
     margin: 10px 20px;
     padding: 20px;
     font-size: 20px;
@@ -284,7 +216,7 @@ nav a.nav-link:hover:not(.active){
     text-shadow: 2px 2px 4px rgba(28, 63, 122, 0.8);
 }
 
-#formContainer .contactLinks {
+#formContainer .contact_links {
     display: flex;
     width: 100%;
     background-color: #1c3f7a;

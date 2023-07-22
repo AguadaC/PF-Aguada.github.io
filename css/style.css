@@ -344,3 +344,12 @@ select:hover {
 .carousel-caption h5 {
     font-weight: bold;
 }
+
+.card-body {
+    background-color: #aebfd7;
+}
+
+.card-body .card-title {
+    font-weight: bold;
+    color: #1c3f7a;
+}

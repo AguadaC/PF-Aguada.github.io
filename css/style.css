@@ -21,10 +21,30 @@ body {
     height: auto;
 }
 
-.presentation_text p {
+.presentation_text p, p.descriptionContainer {
     text-align: justify;
 }
 
+.presentation .row {
+    position: relative; /* Asegura que el contenido dentro de .row esté dentro del flujo del documento */
+  }
+
+.presentation_text::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Ajusta los colores del gradiente según tus preferencias */
+    background: linear-gradient(to bottom, #1c3f7a, #1c3e7a00); /* Cambia los colores aquí */
+    opacity: 0.3; /* Ajusta la opacidad del gradiente si lo deseas */
+    z-index: -1;
+  }
+
+.presentation img {
+    margin: auto;
+}
 .summary {
     margin-top: 50px;
     margin-bottom: 20px;
@@ -57,6 +77,12 @@ body {
 @media (min-width: 900px){
     .summary .summaryTitule, .presentation_text h1{
         font-size: 60px;
+    }
+}
+
+@media (min-width: 992px){
+    .presentation_text::after {
+        background: linear-gradient(to right, #1c3f7a, #1c3e7a00); /* Cambia los colores aquí */
     }
 }
 
@@ -106,7 +132,7 @@ nav a.nav-link:hover:not(.active){
 
 .detailBody .detailItem p {
     margin: 5px;
-    font-size: 30px;
+    font-size: 1rem;
     color: #1c3f7a;
 }
 
@@ -203,12 +229,31 @@ nav a.nav-link:hover:not(.active){
     height: 315px;
 }
 
+@keyframes fade-in-out {
+    0% {
+        background-color: #1c3e7a9d; /* El texto está completamente oculto al inicio */
+    }
+    50% {
+        background-color: #418e95; /* El texto es completamente visible a la mitad de la animación */
+    }
+    100% {
+        background-color: #1c3e7a9d; /* El texto vuelve a estar completamente oculto al final de la animación */
+    }
+}
+
 .summary .descriptionContainer {
-    margin: 5px;
-    border: 5px solid white;
-    padding: 10px;
+    margin: 10px 20px;
+    padding: 20px;
     font-size: 20px;
     color: white;
+    font-style: italic;
+    background-image: url(../images/logos/wave_description.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #1c3f7a;
+    border-radius: 2px;
+    animation: fade-in-out 3s 3;
 }
 
 #formContainer{
@@ -308,4 +353,41 @@ select:hover {
 #mapContainer iframe{ 
     width: 100%;
     height: 100%;
+}
+
+
+.carousel-caption {
+    background-image: linear-gradient(to top,#1c3f7a 40%, #1c3e7a00);
+}
+
+.carousel-caption h5 {
+    font-weight: bold;
+}
+
+.card-body {
+    background-color: #aebfd7;
+}
+
+.card-body .card-title {
+    font-weight: bold;
+    color: #1c3f7a;
+}
+
+.card-body .card-text {
+    text-align: justify;
+}
+
+.bg-custom {
+    background-color: #38a0af;
+    background-image: url(../images/logos/wave.svg); /* Reemplaza 'fondo.svg' con la ruta correcta de tu imagen SVG */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #1c3f7a;
+    border-radius: 2px;
+}
+
+footer span {
+    font-size: 1.3rem;
+    font-weight: bold;
 }

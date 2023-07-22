@@ -229,12 +229,31 @@ nav a.nav-link:hover:not(.active){
     height: 315px;
 }
 
+@keyframes fade-in-out {
+    0% {
+        background-color: #1c3e7a9d; /* El texto está completamente oculto al inicio */
+    }
+    50% {
+        background-color: #418e95; /* El texto es completamente visible a la mitad de la animación */
+    }
+    100% {
+        background-color: #1c3e7a9d; /* El texto vuelve a estar completamente oculto al final de la animación */
+    }
+}
+
 .summary .descriptionContainer {
-    margin: 5px;
-    border-bottom: 5px ridge #1c3f7a;
-    padding: 10px;
+    margin: 10px 20px;
+    padding: 20px;
     font-size: 20px;
     color: white;
+    font-style: italic;
+    background-image: url(../images/logos/wave_description.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #1c3f7a;
+    border-radius: 2px;
+    animation: fade-in-out 3s 3;
 }
 
 #formContainer{
@@ -352,6 +371,10 @@ select:hover {
 .card-body .card-title {
     font-weight: bold;
     color: #1c3f7a;
+}
+
+.card-body .card-text {
+    text-align: justify;
 }
 
 .bg-custom {

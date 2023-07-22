@@ -353,3 +353,18 @@ select:hover {
     font-weight: bold;
     color: #1c3f7a;
 }
+
+.bg-custom {
+    background-color: #38a0af;
+    background-image: url(../images/logos/wave.svg); /* Reemplaza 'fondo.svg' con la ruta correcta de tu imagen SVG */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #1c3f7a;
+    border-radius: 2px;
+}
+
+footer span {
+    font-size: 1.3rem;
+    font-weight: bold;
+}

@@ -21,7 +21,7 @@ body {
     height: auto;
 }
 
-.presentation_text p {
+.presentation_text p, p.descriptionContainer {
     text-align: justify;
 }
 
@@ -37,7 +37,7 @@ body {
     width: 100%;
     height: 100%;
     /* Ajusta los colores del gradiente según tus preferencias */
-    background: linear-gradient(to right, #1c3f7a, #1c3e7a00); /* Cambia los colores aquí */
+    background: linear-gradient(to bottom, #1c3f7a, #1c3e7a00); /* Cambia los colores aquí */
     opacity: 0.3; /* Ajusta la opacidad del gradiente si lo deseas */
     z-index: -1;
   }
@@ -77,6 +77,12 @@ body {
 @media (min-width: 900px){
     .summary .summaryTitule, .presentation_text h1{
         font-size: 60px;
+    }
+}
+
+@media (min-width: 992px){
+    .presentation_text::after {
+        background: linear-gradient(to right, #1c3f7a, #1c3e7a00); /* Cambia los colores aquí */
     }
 }
 
@@ -126,7 +132,7 @@ nav a.nav-link:hover:not(.active){
 
 .detailBody .detailItem p {
     margin: 5px;
-    font-size: 30px;
+    font-size: 1rem;
     color: #1c3f7a;
 }
 
@@ -225,7 +231,7 @@ nav a.nav-link:hover:not(.active){
 
 .summary .descriptionContainer {
     margin: 5px;
-    border: 5px solid white;
+    border-bottom: 5px ridge #1c3f7a;
     padding: 10px;
     font-size: 20px;
     color: white;

@@ -1,0 +1,16 @@
+nav a.nav-link {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-weight: bold;
+    font-stretch: expanded;
+    color: white;
+    font-size: 20px;
+    text-shadow: 2px 2px 4px rgba(28, 63, 122, 0.8);
+    align-self: center;
+    &.active {
+        background-color: #1c3f7a !important;
+    };
+    &:hover:not(.active){
+        color: #1c3f7a !important;
+    }
+}

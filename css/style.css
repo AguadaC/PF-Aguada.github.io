@@ -130,23 +130,6 @@ nav a.nav-link:hover:not(.active){
     height: auto;
 }
 
-.footer {
-    padding: 10px;
-    height: 50px;
-    background-color: black;
-}
-
-.footer img {
-    width: auto;
-    height: 30px;
-    margin: 5px;
-}
-
-.footer .logo {
-    display: inline;
-    
-}
-
 .summary .summary__video {
     display: flex;
     width: 50%;

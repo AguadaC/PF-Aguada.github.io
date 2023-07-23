@@ -1,0 +1,25 @@
+$color-blue: #1c3f7a;
+$color-green: #418e95;
+$color-grey: #aebfd7;
+
+@mixin comun-styles {
+    margin-bottom: 10px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-stretch: expanded;
+    text-shadow: 2px 2px 4px rgba(28, 63, 122, 0.8);
+}
+
+@mixin comun-styles-form {
+    background-color: rgba(28, 63, 122, 0.6);
+    padding: 5px;
+    border: 1px solid #aebfd7;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+@mixin comun-styles-form-hoover {
+    border-color: white;
+}

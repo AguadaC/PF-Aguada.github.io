@@ -1,0 +1,83 @@
+form {
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(28, 63, 122, 0.8);
+    margin-bottom: 10px;
+    box-sizing: border-box;
+};
+
+#formContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid white;
+    & h1 {
+        margin: 10px;
+        color: white;
+        font-size: 30px;
+        text-align: center;
+        font-weight: bold;
+        font-stretch: expanded;
+        text-shadow: 2px 2px 4px rgba(28, 63, 122, 0.8);
+    };
+    & h2 {
+        margin: 10px;
+        color: white;
+        font-size: 20px;
+        text-align: center;
+        font-weight: bolder;
+        font-stretch: expanded;
+        text-shadow: 2px 2px 4px rgba(28, 63, 122, 0.8);
+    };
+    & .contact_links {
+        display: flex;
+        width: 100%;
+        background-color: #1c3f7a;
+        justify-content: space-evenly;
+        margin: 10px;
+        padding: 10px;
+        box-sizing: border-box;
+    };
+    & img {
+        height: 40px;
+        width: auto;
+        margin: 10px;
+    };
+};
+
+#name, #surname, #mail, #phone, #consult, #phone_consult {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+label {
+    display: block;
+    width: 100%;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input {
+    @include comun-styles-form;
+    :hover {
+        @include comun-styles-form-hoover
+    }
+}
+
+textarea {
+    @include comun-styles-form;
+    :hover {
+        @include comun-styles-form-hoover
+    }
+}
+
+select {
+    @include comun-styles-form;
+    :hover {
+        @include comun-styles-form-hoover
+    }
+}
+
+#buttons {
+    text-align: center;
+}

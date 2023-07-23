@@ -1,0 +1,54 @@
+.summary {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    iframe {
+        width: 560px;
+        height: 315px;
+    };
+    & &__titule {
+        @include comun-styles;
+    }
+    &__description {
+        text-align: justify;
+        margin: 10px 20px;
+        padding: 20px;
+        font-size: 20px;
+        color: white;
+        font-style: italic;
+        background-image: url(../images/logos/wave_description.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border: 1px solid #1c3f7a;
+        border-radius: 2px;
+        animation: fade-in-out 3s 3;
+    };
+    & &__video {
+        display: flex;
+        width: 50%;
+        height: auto;
+        margin: 30px auto;
+        justify-content: center;
+        align-items: center;
+    };
+    &__detail {
+        display: flex;
+        & &__item {
+            width: 100%;
+            height: auto;
+            background-image: linear-gradient(to bottom, #38a0af, #418e95 50%, #aebfd7);
+            position: relative;
+            display: inline-block;
+            margin: 5px 5px;
+            p {
+                margin: 5px;
+                font-size: 1rem;
+                color: #1c3f7a;
+            };
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}

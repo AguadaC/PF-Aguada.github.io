@@ -1,9 +1,21 @@
-# PreEntrega2-Aguada
-Segunda Pre-entrega. Curso Coder House. Comisión 55470.
+# PreEntrega3-Aguada
+Tercera Pre-entrega. Curso Coder House. Comisión 55470.
 
-# Paginas adaptadas
-- Adaptadas la vista mobile y la vista desktop utilizando un diseño responsive con el Grid system de Bootstrap.
+# Todas las páginas son responsive
 
-    -`url/index.html`
-
-    -`url/pages/contact.html`
+# Mejoras de esta entrega:
+- Todas las paginas tienen un footer responsive y con nuevo diseño.
+- Se una combinacion de fondos con imagenes svg.
+- Texto real ahora remplaza al viejo Lorem.
+- Imagenes reales en la tarjetas
+- Gradiente usado en la presentacion del Index.
+- Aplicadas tarjetas de bootstrap con estilo própio.
+- Animación usada en la descripción de cada página.
+- Las imagenes de carrusel ahora redireccionan a su respectiva página.
+- Agregadas buenas practicas de SEO
+    - Descripción
+    - Palabras claves
+    - Autor
+- Agrego sitemap.xml
+- Todas las imagenes tienen alt description.
+- Los todo el estilo está generado con scss.

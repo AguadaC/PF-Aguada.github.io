@@ -1,6 +1,6 @@
 @media (min-width: 300px){
     .summary {
-        & &__titule {
+        & &__title {
             font-size: 25px;
         }
     };
@@ -13,7 +13,7 @@
 
 @media (min-width: 600px){
     .summary {
-        & &__titule {
+        & &__title {
             font-size: 40px;
         }
     };
@@ -26,7 +26,7 @@
 
 @media (min-width: 900px){
     .summary {
-        & &__titule {
+        & &__title {
             font-size: 60px;
         }
     };

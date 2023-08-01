@@ -51,7 +51,7 @@ body {
 }
 
 @media (min-width: 0px){
-    .summary .summary__titule, .presentation__text h1 {
+    .summary .summary__title, .presentation__text h1 {
         margin-bottom: 10px;
         color: white;
         font-size: 20px;
@@ -63,19 +63,19 @@ body {
 }
 
 @media (min-width: 300px){
-    .summary .summary__titule, .presentation__text h1{
+    .summary .summary__title, .presentation__text h1{
         font-size: 25px;
     }
 }
 
 @media (min-width: 600px){
-    .summary .summary__titule, .presentation__text h1{
+    .summary .summary__title, .presentation__text h1{
         font-size: 40px;
     }
 }
 
 @media (min-width: 900px){
-    .summary .summary__titule, .presentation__text h1{
+    .summary .summary__title, .presentation__text h1{
         font-size: 60px;
     }
 }

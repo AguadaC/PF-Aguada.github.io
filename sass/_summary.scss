@@ -5,7 +5,7 @@
         width: 560px;
         height: 315px;
     };
-    & &__titule {
+    & &__title {
         @include comun-styles;
     }
     &__description {
@@ -21,7 +21,7 @@
         background-position: center;
         border: 1px solid #1c3f7a;
         border-radius: 2px;
-        animation: fade-in-out 3s 3;
+        animation: fade-in-out 3s infinite;
         column-count: 1;
     };
     & &__video {

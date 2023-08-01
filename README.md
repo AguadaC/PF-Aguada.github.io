@@ -1,21 +1,20 @@
-# PreEntrega3-Aguada
-Tercera Pre-entrega. Curso Coder House. Comisión 55470.
+# Final Submission Aguada
 
-# Todas las páginas son responsive
+## Get Started
+Welcome to the repository of my website project! This project was created as part of a coding course at Coderhouse. It consists of a fully functional website for a real kinesiology clinic, incorporating HTML, CSS, and Sass.
 
-# Mejoras de esta entrega:
-- Todas las paginas tienen un footer responsive y con nuevo diseño.
-- Se una combinacion de fondos con imagenes svg.
-- Texto real ahora remplaza al viejo Lorem.
-- Imagenes reales en la tarjetas
-- Gradiente usado en la presentacion del Index.
-- Aplicadas tarjetas de bootstrap con estilo própio.
-- Animación usada en la descripción de cada página.
-- Las imagenes de carrusel ahora redireccionan a su respectiva página.
-- Agregadas buenas practicas de SEO
-    - Descripción
-    - Palabras claves
-    - Autor
-- Agrego sitemap.xml
-- Todas las imagenes tienen alt description.
-- Los todo el estilo está generado con scss.
+## Installation
+
+To run this project locally, follow these steps:
+
+- Clone the repository to your local machine.
+- Open the project folder in your code editor.
+- Open the index.html file in your web browser to view the website.
+
+## Stack
+
+-The technologies used in this project are as follows:
+
+    - HTML
+    - CSS
+    - Sass

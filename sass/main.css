@@ -216,7 +216,7 @@ form {
   justify-content: center;
   border: 2px solid white;
 }
-#formContainer h1 {
+#formContainer h2 {
   margin: 10px;
   color: white;
   font-size: 30px;
@@ -225,7 +225,7 @@ form {
   font-stretch: expanded;
   text-shadow: 2px 2px 4px rgba(28, 63, 122, 0.8);
 }
-#formContainer h2 {
+#formContainer h3 {
   margin: 10px;
   color: white;
   font-size: 20px;

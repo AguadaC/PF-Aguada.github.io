@@ -176,6 +176,7 @@ body {
 @media (min-width: 992px) {
   .presentation__text ::after {
     background: linear-gradient(to right, #1c3f7a, rgba(28, 62, 122, 0)); /* Cambia los colores aquí */
+    left: 12px;
   }
 }
 @media (min-width: 768px) {
